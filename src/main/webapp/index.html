@@ -1,163 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>index</title>
-  <link href="css/styles.css" rel="stylesheet" />
-  <style>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
 
-    h1 {
-      color: white;
-      font-family: courier;
-      font-size:200%;
-      margin: 0;
-      padding: 0 ;
-      display: inline-block;
-    }
+        h1 {
+            color: white;
+            font-family: courier;
+            font-size:200%;
+            margin: 0;
+            padding: 0 ;
+            display: inline-block;
+        }
 
-    .header{
-      margin : 0 ;
-      padding : 0;
-      background-color: black;
-      display: flex;
-    }
-    .sub_header {
-      margin : 0 ;
-      padding : 0;
-      background-color: black;
-      display: flex;
-    }
-    nav {
-      float: right ;
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: auto;
-    }
+        .header{
+            margin : 0 ;
+            padding : 0;
+            background-color: black;
+            display: flex;
+        }
+        .sub_header {
+            margin : 0 ;
+            padding : 0;
+            background-color: black;
+            display: flex;
+        }
+        nav {
+            float: right ;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: auto;
+        }
 
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
 
-    li.icon {
-      flex-basis: 100%;
-    }
+        li.icon {
+            flex-basis: 100%;
+        }
 
-    body {
-      margin: 0;
-      min-width: 992px;
-      font-family: courier;
-    }
+        body {
+            margin: 0;
+            min-width: 992px;
+            font-family: courier;
+        }
 
-    body h2{
-      text-align: center;
-      margin-top: 60px;
-      margin-bottom: 60px;
-      font-size: 24px;
-      font-style: bold;
-      color: #545454;
-    }
+        body h2{
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            font-size: 24px;
+            font-style: bold;
+            color: #545454;
+        }
 
-    .inform {
-      margin-left: auto;
-      margin-right: auto;
-      padding: 0;
-      width: 740px;
-      text-align: center;
-    }
+        .inform {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            width: 740px;
+            text-align: center;
+        }
 
-    .inform img{
-      width: 200px;
-      height: 225px;
-      margin-right: 20px;
-      margin-bottom: 20px;
-    }
+        .inform img{
+            width: 200px;
+            height: 225px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
 
-    .inform a{
-      text-decoration: none;
-      color: black;
-      float: left;
-      font-size: 16px;
-    }
+        .inform a{
+            text-decoration: none;
+            color: black;
+            float: left;
+            font-size: 16px;
+        }
 
-    .data{
-      margin-top: 4px;
-      margin-bottom: 80px;
-    }
+        .data{
+            margin-top: 4px;
+            margin-bottom: 80px;
+        }
 
 
-    .clearfix{
-      clear: both;
-    }
-  </style>
+        .clearfix{
+            clear: both;
+        }
+    </style>
 </head>
 <body>
 <div class = "header" >
-  <h1>Project3</h1>
-  <nav>
-    <div style="padding: 5px 10px 0px 0px;">
-      <div class = "User">
-        <button type="button" onclick="location.href='http://taeju0627.dothome.co.kr/Project_3/myhome/login.html' ">Login</button>
-        <button type="button" onclick="location.href='http://taeju0627.dothome.co.kr/Project_3/myhome/edit.html' ">Edit Account</button>
-        <button type="button" onclick="location.href='#' ">Shopping Basket</button>
-      </div>
-    </div>
+    <h1>index</h1>
+    <nav>
+        <div style="padding: 5px 10px 0px 0px;">
+            <div class = "User">
+                <button type="button" onclick="location.href='http://taeju0627.dothome.co.kr/Project_3/myhome/login.html' ">Login</button>
+                <button type="button" onclick="location.href='http://taeju0627.dothome.co.kr/Project_3/myhome/edit.html' ">Edit Account</button>
+                <button type="button" onclick="location.href='#' ">Shopping Basket</button>
+            </div>
+        </div>
 
-  </nav>
+    </nav>
 
 </div>
 <div style="padding: 0px 5px 0px 0px;">
-  <div class = "sub_header">
-    <a href="#" target="_blank">Store</a>
-    <a href="#" target="_blank">Achive</a>
-    <a href="#" target="_blank">Brand</a>
-    <a href="#" target="_blank" >Designer</a>
-  </div>
+    <div class = "sub_header">
+        <a href="#" target="_blank">Store</a>
+        <a href="#" target="_blank">Achive</a>
+        <a href="#" target="_blank">Brand</a>
+        <a href="#" target="_blank" >Designer</a>
+    </div>
 </div>
 <h2>Your account</h2>
 <div class="inform">
-  <form>
-    <a href="#">
-      <img src="img/1.jpg">
-      <p>Last Name</p>
-      <p class="data"> <?= $lastname?></p>
-    </a>
-    <a href="#">
-      <img src="img/2.jpg">
-      <p>First Name</p>
-      <p class="data"><?= $firstname?></p>
-    </a>
-    <a href="#">
-      <img src="img/3.jpg">
-      <p>major</p>
-      <p class="data">Computer Engineering</p>
-    </a>
-    <a href="#">
-      <img src="img/4.jpg">
-      <p>Class</p>
-      <p class="data">03</p>
-    </a>
-    <a href="#">
-      <img src="img/5.jpg">
-      <p>ID</p>
-      <p class="data"><?= $ID?></p>
-    </a>
-    <a href="#">
-      <img src="img/6.jpg">
-      <p>PassWord</p>
-      <p class="data"><?= $PassWord?></p>
-    </a>
-    <a href="#">
-      <img src="img/7.jpg">
-      <p>Address</p>
-      <p class="price"><?= $Address?></p>
-    </a>
-  </form>
+    <form>
+        <a href="#">
+            <img src="img/1.jpg">
+            <p>Last Name</p>
+            <p class="data"> <?= $lastname?></p>
+        </a>
+        <a href="#">
+            <img src="img/2.jpg">
+            <p>First Name</p>
+            <p class="data"><?= $firstname?></p>
+        </a>
+        <a href="#">
+            <img src="img/3.jpg">
+            <p>major</p>
+            <p class="data">Computer Engineering</p>
+        </a>
+        <a href="#">
+            <img src="img/4.jpg">
+            <p>Class</p>
+            <p class="data">03</p>
+        </a>
+        <a href="#">
+            <img src="img/5.jpg">
+            <p>ID</p>
+            <p class="data"><?= $ID?></p>
+        </a>
+        <a href="#">
+            <img src="img/6.jpg">
+            <p>PassWord</p>
+            <p class="data"><?= $PassWord?></p>
+        </a>
+        <a href="#">
+            <img src="img/7.jpg">
+            <p>Address</p>
+            <p class="price"><?= $Address?></p>
+        </a>
+    </form>
 
 
-  <div class="clearfix"></div>
+    <div class="clearfix"></div>
 </div>
 </body>
 </html>
